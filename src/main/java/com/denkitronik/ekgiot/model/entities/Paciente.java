@@ -1,11 +1,10 @@
-package com.denkitronik.ekgiot.model.entidades;
+package com.denkitronik.ekgiot.model.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
 
 /**
  * Clase que representa la entidad Paciente

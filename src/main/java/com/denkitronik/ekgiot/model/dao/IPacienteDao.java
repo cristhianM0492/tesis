@@ -1,7 +1,7 @@
 package com.denkitronik.ekgiot.model.dao;
 
 
-import com.denkitronik.ekgiot.model.entidades.Paciente;
+import com.denkitronik.ekgiot.model.entities.Paciente;
 import org.springframework.data.repository.CrudRepository;
 
 

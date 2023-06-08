@@ -1,11 +1,10 @@
 package com.denkitronik.ekgiot.controller;
 
-import com.denkitronik.ekgiot.model.entidades.Paciente;
+import com.denkitronik.ekgiot.model.entities.Paciente;
 import com.denkitronik.ekgiot.model.service.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController //Se define como un controlador rest

@@ -2,8 +2,7 @@ package com.denkitronik.ekgiot.model.service;
 
 
 import com.denkitronik.ekgiot.model.dao.IPacienteDao;
-import com.denkitronik.ekgiot.model.entidades.Paciente;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.denkitronik.ekgiot.model.entities.Paciente;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
