@@ -1,10 +1,10 @@
-package com.denkitronik.ekgiot;
+package com.denkitronik.ekgiot.pacienteservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EkgIotApplicationTests {
+class PacienteServiceApplicationTests {
 
     @Test
     void contextLoads() {

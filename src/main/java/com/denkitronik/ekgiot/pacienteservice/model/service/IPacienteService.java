@@ -1,7 +1,7 @@
-package com.denkitronik.ekgiot.model.service;
+package com.denkitronik.ekgiot.pacienteservice.model.service;
 
 
-import com.denkitronik.ekgiot.model.entities.Paciente;
+import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
 
 import java.util.List;
 

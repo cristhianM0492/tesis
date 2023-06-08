@@ -1,4 +1,4 @@
-package com.denkitronik.ekgiot.model.entities;
+package com.denkitronik.ekgiot.pacienteservice.model.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

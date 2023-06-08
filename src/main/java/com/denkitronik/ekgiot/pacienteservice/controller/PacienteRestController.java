@@ -1,7 +1,7 @@
-package com.denkitronik.ekgiot.controller;
+package com.denkitronik.ekgiot.pacienteservice.controller;
 
-import com.denkitronik.ekgiot.model.entities.Paciente;
-import com.denkitronik.ekgiot.model.service.IPacienteService;
+import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
+import com.denkitronik.ekgiot.pacienteservice.model.service.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

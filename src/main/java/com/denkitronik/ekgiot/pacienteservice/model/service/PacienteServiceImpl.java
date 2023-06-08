@@ -1,8 +1,8 @@
-package com.denkitronik.ekgiot.model.service;
+package com.denkitronik.ekgiot.pacienteservice.model.service;
 
 
-import com.denkitronik.ekgiot.model.dao.IPacienteDao;
-import com.denkitronik.ekgiot.model.entities.Paciente;
+import com.denkitronik.ekgiot.pacienteservice.model.dao.IPacienteDao;
+import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
