@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * Clase implementa el servicio de pais
+ * Clase implementa el servicio de paciente
  */
 @Service
 public class PacienteServiceImpl implements IPacienteService {
@@ -74,5 +74,11 @@ public class PacienteServiceImpl implements IPacienteService {
     @Override
     public Paciente findById(Long id) {
         return pacienteDao.findById(id).isPresent() ? pacienteDao.findById(id).get() : null;
+    }
+
+    @Override
+    public Paciente login(Paciente paciente) {
+       // return pacienteDao.findByEmail(Paciente email).isPresent() ? pacienteDao.findByEmail(Paciente).get() : null;
+        return paciente;
     }
 }

@@ -15,6 +15,9 @@ public interface IPacienteService {
     Paciente update(Paciente paciente);
     List<Paciente> findAll();
     Paciente findById(Long id);
+
+    Paciente login(Paciente paciente);
+
 }
 
 

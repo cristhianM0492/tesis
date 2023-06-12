@@ -1,24 +1,21 @@
 package com.denkitronik.ekgiot.pacienteservice.model.entities;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-/**
- * Clase que representa la entidad Paciente
- */
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity //Indica que es una entidad
-@Table(name = "pacientes") //Indica el nombre de la tabla
-public class Paciente {
-
+@Table(name = "especialistas") //Indica el nombre de la tabla
+public class Especialista {
     @Id //Indica que es la llave primaria
-  //  @GeneratedValue(strategy = GenerationType.IDENTITY)
+   // @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -48,3 +45,4 @@ public class Paciente {
 
 
 }
+
