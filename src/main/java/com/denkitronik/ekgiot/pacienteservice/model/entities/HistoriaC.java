@@ -22,6 +22,22 @@ public class HistoriaC {
 
     @Getter
     @Setter
+    @Column(name = "nombres")
+    private String nombres;
+
+    @Getter
+    @Setter
+    @Column(name = "apellidos")
+    private String apellidos;
+
+
+    @Getter
+    @Setter
+    @Column(name = "email")
+    private String email;
+
+    @Getter
+    @Setter
     @Column(name = "direccion")
     private String direccion;
 
@@ -56,34 +72,30 @@ public class HistoriaC {
 
     @Getter
     @Setter
-    @Column(name = "antecedentes_quirurgicos")
-    private String antecedentesQuirurgicos;
+    @Column(name = "diabetico")
+    private String diabetico;
 
     @Getter
     @Setter
-    @Column(name = "antecedentes_alergicos")
-    private String antecedentesAlergicos;
+    @Column(name = "fumador")
+    private String fumador;
 
     @Getter
     @Setter
-    @Column(name = "antecedentes_patologicos")
-    private String antecedentesPatologicos;
+    @Column(name = "antecedentes_Quirurgicos")
+    private String antecedentes_Quirurgicos;
 
     @Getter
     @Setter
-    @Column(name = "antecedentes_heredofamiliares")
-    private String antecedentesHeredofamiliares;
+    @Column(name = "antecedentes_Alergicos")
+    private String antecedentes_Alergicos;
+
+
 
     @Getter
     @Setter
-    @Column(name = "antecedentes_toxicos")
-    private String antecedentesToxicos;
-
-    @Getter
-    @Setter
-    @Column(name = "antecedentes_Transfuncionales")
-    private String antecedentesTransfuncionales;
-
+    @Column(name = "antecedentes_Heredofamiliares")
+    private String antecedentes_Heredofamiliares;
 
 }
 

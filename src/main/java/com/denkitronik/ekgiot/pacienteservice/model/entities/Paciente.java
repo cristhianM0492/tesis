@@ -32,6 +32,11 @@ public class Paciente {
     @Column(name = "apellidos")
     private String apellidos;
 
+    @Getter
+    @Setter
+    @Column(name = "fecha")
+    private String fecha;
+
 
     @Getter
     @Setter

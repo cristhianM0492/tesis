@@ -1,8 +1,8 @@
 package com.denkitronik.ekgiot.pacienteservice.model.service;
 
 
-import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
 
+import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
 import java.util.List;
 
 /**
@@ -16,7 +16,7 @@ public interface IPacienteService {
     List<Paciente> findAll();
     Paciente findById(Long id);
 
-    Paciente login(Paciente paciente);
+
 
 }
 

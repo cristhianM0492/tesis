@@ -6,6 +6,7 @@ import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import java.util.List;
 
 /**
@@ -16,6 +17,7 @@ public class PacienteServiceImpl implements IPacienteService {
 
     /**
      * Constructor de la clase
+     *
      * @param pacienteDao objeto de tipo IPacienteDao que se inyecta por
      *                    constructor  para acceder a los metodos de la
      *                    capa de datos de la entidad Paciente
@@ -24,11 +26,12 @@ public class PacienteServiceImpl implements IPacienteService {
         this.pacienteDao = pacienteDao;
     }
 
-//    @Autowired
+    //    @Autowired
     IPacienteDao pacienteDao; //Inyectamos el objeto de tipo IPacienteDao
 
     /**
      * Este metodo guarda un paciente
+     *
      * @param paciente objeto de tipo Paciente que se quiere guardar
      * @return el paciente guardado
      */
@@ -37,8 +40,11 @@ public class PacienteServiceImpl implements IPacienteService {
         return pacienteDao.save(paciente);
     }
 
+
+
     /**
      * Este metodo elimina un paciente
+     *
      * @param paciente objeto de tipo Paciente que se quiere eliminar
      */
     @Override
@@ -48,6 +54,7 @@ public class PacienteServiceImpl implements IPacienteService {
 
     /**
      * Este metodo actualiza un paciente
+     *
      * @param paciente objeto de tipo Paciente que se quiere actualizar
      * @return el paciente actualizado
      */
@@ -58,6 +65,7 @@ public class PacienteServiceImpl implements IPacienteService {
 
     /**
      * Este metodo lista los pacientes guardados
+     *
      * @return una lista de pacientes
      */
     @Override
@@ -67,6 +75,7 @@ public class PacienteServiceImpl implements IPacienteService {
 
     /**
      * Este metodo busca un paciente
+     *
      * @param id Llave primaria del paciente que se quiere buscar
      * @return el paciente identificado por el campo id
      */
@@ -76,9 +85,6 @@ public class PacienteServiceImpl implements IPacienteService {
         return pacienteDao.findById(id).isPresent() ? pacienteDao.findById(id).get() : null;
     }
 
-    @Override
-    public Paciente login(Paciente paciente) {
-       // return pacienteDao.findByEmail(Paciente email).isPresent() ? pacienteDao.findByEmail(Paciente).get() : null;
-        return paciente;
-    }
+
+
 }

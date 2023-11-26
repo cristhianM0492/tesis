@@ -1,6 +1,6 @@
 package com.denkitronik.ekgiot.pacienteservice.controller;
 
-import com.denkitronik.ekgiot.pacienteservice.model.dao.IPacienteDao;
+
 import com.denkitronik.ekgiot.pacienteservice.model.entities.Paciente;
 import com.denkitronik.ekgiot.pacienteservice.model.service.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +14,9 @@ import java.util.List;
 public class PacienteRestController {
 
     IPacienteService pacienteService; //Interfaz de la capa de servicio
-
     /**
      * Constructor de la clase
+     *
      * @param pacienteService Es la interfaz de la capa de servicio que se inyecta por constructor
      */
     @Autowired
@@ -52,15 +52,19 @@ public class PacienteRestController {
      *
      * @return Lista de pacientes
      */
-    @GetMapping("/pacientes")
+    @GetMapping("/obtener-pacientes")
     public List<Paciente> getPacientes() {
         List<Paciente> pacientes;
         pacientes = pacienteService.findAll();
         return pacientes;
     }
+
     /**
      * Metodo para loguear los pacientes
      */
 
-}
 
+
+
+
+}
