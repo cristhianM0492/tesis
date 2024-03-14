@@ -63,6 +63,10 @@ public class PacienteRestController {
      * Metodo para loguear los pacientes
      */
 
+    @PostMapping("/eliminar/paciente")
+    public void eliminarPaciente(@RequestBody Paciente paciente) {
+        pacienteService.delete(paciente);
+    }
 
 
 
